@@ -43,8 +43,8 @@ const mysql = require('mysql2');
 
 // Use environment variables for database configuration
 const db = mysql.createPool({
-    host: process.env.DB_HOST || 'localhost', // Fallback to 'localhost' for local development
-    user: process.env.DB_USER || 'root',      // Fallback to 'root' for local development
+    host: process.env.DB_HOST || 'mydbmysql.ccbmo0k8wbqn.us-east-1.rds.amazonaws.com', // Fallback to 'localhost' for local development
+    user: process.env.DB_USER || 'admin',      // Fallback to 'root' for local development
     password: process.env.DB_PASSWORD || 'admin123', // Fallback to 'admin123' for local development
     database: process.env.DB_NAME || 'pos',   // Fallback to 'pos' for local development
     port: process.env.DB_PORT || '3306',      // Fallback to '3306' for local development
